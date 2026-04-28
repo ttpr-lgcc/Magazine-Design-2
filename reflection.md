@@ -1,0 +1,8 @@
+1. What is position: absolute and why is it useful for a layout like this magazine cover? What would happen if you removed it?
+By default, the position property is set to static. When it is static(if I removed position: absolute), any top, bottom, left, right properties are ignored which means we cannot manually set its position. It(position: absolute) is useful for a layout like this magazine cover because we are putting the text as overlay on the cover image. 
+
+2. What does the ::before pseudo-element do, and why is it useful to add decorative elements this way instead of adding extra HTML tags?
+It is easier to understand that what elements do the decorative elements belong to each others. We can also apply the same decorative element to mulitple elements without needing to add each HTML tag for each elements. Moreover, it is more relevant to only see styling and decorations in term of CSS rather than HTML, which are used to create the structures. 
+
+3. What challenges did you face when trying to position elements on the cover? How did you use the browser's DevTools to help?
+I faced the challenged when the H2 text with "KENDRICK LAMAR" was overlapping with each word. I had to use AI Assistant from browser's DevTools figure out the issue. It explained that the current H2 has line-height: 0; and the current text has been wrapped on to next line. I fixed the issue by adding 'white-space: nowrap;' to it. Even though the README guide included 'whitespace' for CSS property, I wasn't aware what it meant. So, I left out at first. 
