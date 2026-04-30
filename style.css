@@ -34,66 +34,180 @@ img {
 
 /* ---- YOUR STYLES BELOW ---- */
 
-body {}
+body {
+  background-color: #fffdd0;
+  margin: 40px;
+}
 
-.container {}
+.container {
+  border: 2px solid black;
+}
 
 /*////////// COVER //////////*/
 
-#magazine-cover {}
+#magazine-cover {
+  text-align: center;
+  border: 2px solid black;
+  /* width: 800px; */
+  height: 500px;
+  background-image: url(Kendrick-Lamar-Mass-Appeal-cover.jpg);
+  background-size: cover;
+  height: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /* Hint: use position: absolute on all headings/paragraphs inside the cover
    so you can place them exactly where you want using top, left, right values */
 #magazine-cover h1,
 #magazine-cover h2,
 #magazine-cover h3,
-#magazine-cover p {}
+#magazine-cover p {
+  position: absolute;
+  margin: 0;
+}
 
 /* Style both h1 elements — font, size, color, and a skew transform */
-h1 {}
+#magazine-cover h1 {
+  font-family: Serpentine;
+  font-size: 100px;
+  letter-spacing: 20px;
+  line-height: 1.2;
+  color: black;
+  transform: skew(-10deg);
+}
+
+/* right main title */
 
 /* h2 and h3 share the OsakaMono font */
-h2, h3, p {}
+#magazine-cover h2,
+#magazine-cover h3,
+#magazine-cover p {
+  font-family: 'OsakaMono', monospace;
+}
 
 /* First h1: "Mass" — position it near the top-left of the cover */
-#magazine-cover h1:nth-child(1) {}
+#magazine-cover h1:nth-child(1) {
+  top: 20px;
+  left: 30px;
+}
 
 /* Second h1: "appeal" — position it just below the first */
-#magazine-cover h1:nth-child(2) {}
+#magazine-cover h1:nth-child(2) {
+  top: 100px;
+  left: 30px;
+}
 
 /* All h2 headings — uppercase, font size */
-h2 {}
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
 
 /* Cover h2: "KENDRICK LAMAR" — position on the right side of the cover */
-#magazine-cover h2 {}
+#magazine-cover h2 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: inline-block;  /*keep bar tight to text*/
+  white-space: nowrap;
+  color: white;
+  
+}
 
-/* Decorative black background bar behind the cover h2 using a ::before pseudo-element */
-#magazine-cover h2::before {}
+#magazine-cover h2,
+#magazine-cover h3 {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  z-index: 1;            
+}
+
+#magazine-cover h2::before,
+#magazine-cover h3::before {
+  content: "";
+  position: absolute;
+  inset: 0;              /* ✅ covers full text */
+  background: black;
+  z-index: -1;           /* ✅ sits behind text */
+}
+
+/* Decorative black background bar behind the cover h2 using a ::before pseudo-element
+
 
 /* All h3 headings — uppercase, lighter font weight */
-h3 {}
+h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
 
 /* Cover h3 #1: "THE PEN IS MIGHTIER" — positioned below the h2 */
-#magazine-cover h3:nth-child(4) {}
+#magazine-cover h3:nth-child(4) {
+  top: 80px;
+  right: 30px;
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+}
 
 /* Decorative bar behind h3 #1 */
-#magazine-cover h3:nth-child(4)::before {}
+#magazine-cover h3:nth-child(4)::before {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 /* Cover h3 #2: "THAN THE SWORD" — positioned below h3 #1 */
-#magazine-cover h3:nth-child(5) {}
+#magazine-cover h3:nth-child(5) {
+  top: 100px;
+  right: 30px;
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+}
 
 /* Decorative bar behind h3 #2 */
-#magazine-cover h3:nth-child(5)::before {}
+#magazine-cover h3:nth-child(5)::before {
+  content: "";
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 /* Cover paragraph (contributor names) — positioned at the bottom-right of the cover */
-#magazine-cover p {}
+#magazine-cover p {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  color: #fff;
+  text-align: right;
+}
 
 /*////////// ARTICLE //////////*/
 
-#magazine-article {}
+#magazine-article {
+  margin: 0 30px;
+}
 
-#magazine-article h2 {}
+#magazine-article h2 {
+  color: #c35b90;
+  text-align: center;
+}
 
-#magazine-article h3 {}
+#magazine-article h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
 
-#magazine-article p {}
+#magazine-article p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
