@@ -1,0 +1,3 @@
+1. position: absolute, is when an element rather than being in the general flow like a normal element is positioned relative to its nearest parent. This is useful especially for a magazine cover because things like titles and subtitles need to be placeed in more abstract and specific areas to fit the flow of whats going on.
+2. the ::before pseudo element is used to add content as the first child of whatever element you add it to. This is useful to add styling without altering the html.
+3. The hardest thing i would say is just determining the right value to get the element to where you need it to be.

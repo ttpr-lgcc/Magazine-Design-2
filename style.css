@@ -69,7 +69,7 @@ body {
 
 /* Style both h1 elements — font, size, color, and a skew transform */
 h1 {
-  font-family: Serpentine;
+    font-family: 'Serpentine';
   font-size: 7.5em;
   transform: skewX(-10deg);
 
@@ -77,7 +77,7 @@ h1 {
 
 /* h2 and h3 share the OsakaMono font */
 h2, h3, p {
-  font-family: OsakaMono;
+font-family: 'OsakaMono';
 }
 
 /* First h1: "Mass" — position it near the top-left of the cover */
@@ -110,7 +110,7 @@ color: white;}
   position: absolute;
   background: black;
   z-index: -1;
-  top: -21px;
+  top: -15px;
   left: -10px;
 
 }
@@ -129,7 +129,17 @@ h3 {
 }
 
 /* Decorative bar behind h3 #1 */
-#magazine-cover h3:nth-child(4)::before {}
+#magazine-cover h3:nth-child(4)::before {
+  content: " ";
+  display: block;
+  width: 320px;
+  height: 42px;
+  position: absolute;
+  background: black;
+  z-index: -1;
+  top: -21px;
+  left: -10px;
+}
 
 /* Cover h3 #2: "THAN THE SWORD" — positioned below h3 #1 */
 #magazine-cover h3:nth-child(5) {
@@ -138,7 +148,17 @@ h3 {
 }
 
 /* Decorative bar behind h3 #2 */
-#magazine-cover h3:nth-child(5)::before {}
+#magazine-cover h3:nth-child(5)::before {
+  content: " ";
+  display: block;
+  width: 320px;
+  height: 42px;
+  position: absolute;
+  background: black;
+  z-index: -1;
+  top: -10px;
+  left: -10px;
+}
 
 /* Cover paragraph (contributor names) — positioned at the bottom-right of the cover */
 #magazine-cover p {
