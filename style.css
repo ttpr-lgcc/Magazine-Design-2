@@ -173,10 +173,25 @@ h3 {
 
 /*////////// ARTICLE //////////*/
 
-#magazine-article {}
+#magazine-article {
+  background: white;
+  padding: 80px;
+}
 
-#magazine-article h2 {}
+#magazine-article h2 {
+  color: black;
+  text-align: center;
+  margin: 5px;
+}
 
-#magazine-article h3 {}
+#magazine-article h3 {
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  margin: 10px;
+}
 
-#magazine-article p {}
+#magazine-article p {
+  font: normal 1em/1.5em Times, serif;
+  margin-bottom: 20px;
+}
