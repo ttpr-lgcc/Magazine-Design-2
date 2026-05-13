@@ -32,7 +32,7 @@ img {
 
 body {
   margin: 0;
-  background: #444;
+  background: white;
 }
 
 .container {
@@ -47,7 +47,7 @@ body {
     no-repeat center;
   background-size: cover;
   height: 1023px;
-  border: 1px solid black;
+  border: 2px solid black;
   box-shadow: 0 2px 4px black;
   position: relative;
   margin-bottom: 0;
@@ -66,9 +66,8 @@ body {
 
 
 h1 {
-  font-family: serpentine;
+  font-family: 'Serpentine', sans-serif;
   font-size: 7.5em;
-  text-decoration-color: black;
   transform: skew(-10deg);
   }
 
@@ -91,19 +90,25 @@ h2, h3, p {
 h2 {
   text-transform: uppercase;
   font-size: 2em;
-  transform: scaleX(0.92)
+  transform: scaleX(0.92);
+  text-align: center;
+  color: black;
+  margin: 5px 0;
+  transform: scale(0.92);
 }
 
 #magazine-cover h2 {
   top: 219px; 
   left: 503px;
-  text-decoration-color: white;
+  color: white;
+  position: absolute;
+  white-space: nowrap;
 }
 
 #magazine-cover h2::before {
-    content: " ";
+  content: " ";
   display: block;
-  width: 320px;
+  width: 317px;
   height: 42px;
   position: absolute;
   background: black;
@@ -116,49 +121,54 @@ h3 {
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 1.35em;
+  margin: 20px 0;
+  text-align: center;
+  color: black;
 }
 
 #magazine-cover h3:nth-child(4) {
   top: 249px; 
-  left: 562px;
-  text-decoration-color: white;
+  left: 547px;
+  color: white;
 }
 
 #magazine-cover h3:nth-child(4)::before {
   content: " ";
   display: block;
-  width: 320px;
-  height: 42px;
+  width: 260px;
+  height: 32px;
   position: absolute;
   background: black;
   z-index: -1;
-  top: -21px;
+  top: -16px;
   left: -10px;
 }
 
 #magazine-cover h3:nth-child(5) {
   top: 275px;
-  left: 595;
-  text-decoration-color: white;
+  right: 17px;
+  color: white;
 }
 
 #magazine-cover h3:nth-child(5)::before {
-      content: " ";
+  content: " ";
   display: block;
-  width: 320px;
-  height: 42px;
+  width: 220px;
+  height: 32px;
   position: absolute;
   background: black;
   z-index: -1;
-  top: -21px;
+  top: -16px;
   left: -10px;
 }
 
 #magazine-cover p {
-  top: 819px;
-  right: 37px;
-  text-decoration-color: white;
-  align-items: right;
+  top: 875px;
+  right: 10px;
+  color: white;
+  text-align: right;
+  font-size: 0.9em;
+  line-height: 1.4;
 }
 
 /*////////// ARTICLE //////////*/
